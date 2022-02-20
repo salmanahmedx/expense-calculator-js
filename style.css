@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Itim&display=swap');
+
+
+/* global css  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 3rem .5rem;
+    font-family: 'Itim',
+        cursive;
+    background-color: #1E2022;
+}
+
+header {
+    max-height: 15vh;
+}
+
+/* photo section*/
+
+.photo {
+    display: flex;
+    justify-content: center;
+    max-width: 95vw;
+    margin: 4rem auto 4rem auto;
+}
+
+.photo:hover img {
+    transform: scale(1.002);
+}
+
+img {
+    border-radius: 1.5rem;
+    max-width: 90%;
+    transition: all ease-in-out 0.2s;
+}
+
+/* text section */
+
+h1 {
+    font-size: 3.5rem;
+    color: #F0F5F9;
+    text-align: center;
+    max-height: 20vh;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin: .35rem auto;
+    color: #1E2022;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #52616B;
+    margin-bottom: .3rem;
+}
+
+/* button */
+
+button {
+    background-color: #52616B;
+    padding: .85rem 1.25rem;
+    width: 7rem;
+    border: none;
+    border-radius: .35rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: .9rem auto;
+    display: block;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+button:hover {
+    background-color: #1E2022;
+}
+
+/* input form */
+
+.input {
+    padding: .7rem;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    border-radius: .4rem;
+    margin: .6rem auto;
+    background-color: #e8eaeb;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 2px solid #1E2022;
+}
+
+.save-percent {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 1rem;
+    height: 1rem;
+    background: #e5eaec;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: .7rem;
+}
+
+.save-percent:hover {
+    opacity: 1;
+}
+
+.save-percent::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #1E2022;
+    cursor: pointer;
+}
+
+.save-percent::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+/* form container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #fcf9f9;
+    padding: .7rem .9rem;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.2s;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* responsive design */
+@media screen and (min-width:1200px) and (max-height: 890px) {
+    h1 {
+        min-height: 20vh;
+    }
+
+    .container {
+        min-height: 80vh;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    main {
+        width: 95vw;
+        margin: 1rem auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+        min-height: 15vh;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin: .25rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: .3rem;
+    }
+
+    .input {
+        padding: .5rem;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        width: 8rem;
+        margin: .85rem auto;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 70vh;
+    }
+
+    .calculator {
+        flex-basis: 50%;
+        margin-left: 2rem;
+        padding: 1.5rem;
+    }
+
+    .photo {
+        max-height: 70vh;
+        max-width: 40vw;
+        flex-basis: 40%;
+        margin-bottom: 0;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .calculator:hover {
+        transform: scale(1.001);
+        margin-left: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        max-height: 100vh;
+        padding: 2rem;
+    }
+
+    main {
+        width: 85vw;
+        min-height: 80vh;
+        margin: 0rem auto;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
+        min-height: 15vh;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin: .5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: .3rem;
+    }
+
+    .input {
+        padding: .7rem;
+        margin-bottom: .75rem;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        width: 8rem;
+        margin: .7rem auto;
+    }
+
+    .container {
+        max-height: 70vh;
+    }
+}
